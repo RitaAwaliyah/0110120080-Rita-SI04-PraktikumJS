@@ -1,0 +1,39 @@
+
+	h1{
+		background-color: rgba(355, 355, 355, 0.8);
+		}
+
+.chatA p {
+	background-color:white;
+	line-height: 15px;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+	}
+
+
+.chatB p {
+	background-color: white;
+	color: black;
+	line-height: 15px;
+	font-size: 0.8em;
+	padding: 10px;
+	border-radius: 5px;
+	}
+
+	ul li {
+		display: inline-block;
+		color: purple;
+		margin-right: 20px;
+		background-color: white;
+		padding: 5px 20px;
+		border-radius: 5px;
+		font-size: 15px;
+		}
+
+
+	.active {
+		background-color: purple;
+		color: white;
+		}

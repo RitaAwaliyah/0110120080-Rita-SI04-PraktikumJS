@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Image Picker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function pilih(){
+			let list_bias = document.getElementById('bias');
+			let idx = list_bias.selectedIndex;
+			let area_gambar = document.getElementById ("gambar");
+			area_gambar.src = "image/" + list_bias[idx].value + ".jpg";
+			alert("bias yang kamu pilih adalah " + list_bias[idx].value + ".jpg");
+		}
+	</script>
+</head>
+<body>
+	<div class="img">
+		<h1><b>Pilih Bias Kamu</b></h1>
+		<hr>
+		<form id="frm1">
+			Bias Kamu <select id="bias"  onchange="pilih()">
+				<option value="RM"> RM </option>
+				<option value="seokjin"> Seokjin </option>
+				<option value="suga"> suga</option>
+				<option value="Hobi"> Hobi</option>
+				<option value="Jimin"> Jimin </option>
+				<option value="taehyung"> taehyung </option>
+                <option value="Jungkook"> Jungkook </option>
+                <option value="OT7"> OT7 </option>
+			</select>
+		</form>
+		<br></br>
+		<img src="image/btsarmy.jpg" alt="gambar bias" id="gambar" border="1px">
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KursRupiah</title>
+</head>
+<body>
+	<div id="">
+	<h1>Kurs Rupiah</h1>
+			<tbody>
+				<tr>
+					<td><input onkeyup="kurs()" placeholder="Masukan Nilai" type="text" name="nilai" id="nilai"></td>
+				<td>
+				<select onchange="kurs()" id="kurs" >
+					<option value="1">Dollar US</option>
+					<option value="2">Won</option>
+					<option value="3">Ringgit</option>
+					<option value="4">Yen</option>
+					<option value="5">Pound Sterling</option>
+				</select></td>
+				<td><input type="text" disabled="" id="rupiah" placeholder="Nilai Rupiah" name="rupiah"></td>
+				</tr>
+			</tbody>
+	</table>
+</div>
+		<script>
+			function kurs() {
+
+		let r = document.getElementById("kurs").value;
+
+		if ( r == 1) {
+			input = document.getElementById("nilai").value;
+			nilai = 9915;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp.' + hitung;
+		}else if (r == 2) {
+			input = document.getElementById("nilai").value;
+			nilai = 13472;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp' + hitung;
+		}else if (r == 3) {
+			input = document.getElementById("nilai").value;
+			nilai = 874;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp.' + hitung;
+		}else if ( r == 4) {
+			input = document.getElementById("nilai").value;
+			nilai = 120;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp.'+ hitung;
+		}else if (r == 5) {
+			input = document.getElementById("nilai").value;
+			nilai = 15888;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp' + hitung;
+		}else if ( r == 6) {
+			input = document.getElementById("nilai").value;
+			nilai = 3592;
+			hitung = nilai * input;
+			document.getElementById("rupiah").value = 'Rp.' + hitung;
+		}
+	}
+
+		</script>
+</body>
+</html>

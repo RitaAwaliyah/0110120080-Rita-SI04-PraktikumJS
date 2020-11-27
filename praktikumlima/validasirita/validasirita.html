@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validasi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/validasi.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Akun Kustomer</h2>
+		</div>
+		<form class="form" id="form">
+			<div class="form-control">
+                <label>Nama Anda</label>
+                <input type="text" placeholder="">
+			</div>
+				<div class="form-control">
+				<label>Email</label>
+				<input type="text" placeholder="">
+			</div>
+				<div class="form-control">
+				<label>Tanaggal keberangkatan</label>
+				<input type="datetime">
+			</div>
+			<div class="form-control">
+				<label>Tujuan</label><br></br>
+				<select name="tujuan" id="tujuan" required>
+								<option value="Korea Selatan"> Korea</option>
+								<option value="Paris"> Paris  </option>
+								<option value="Bali"> Bali  </option>
+								<option value="Jepang"> Jepang  </option>
+								<option value="London"> London </option>
+								<option value="Afganistan"> Afganistan  </option>
+							</select>
+			</div>
+				<div class="form-control">
+				<label>Jumlah Tiket</label>
+				<input  type="text">
+			</div>
+			<div class="form-control">
+			<input type="submit" onClick="return validasi()" value="submit">
+		</div>
+		</form>
+
+	</div>
+</body>
+</html>
